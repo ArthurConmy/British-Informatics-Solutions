@@ -19,6 +19,11 @@ typedef vector< string > vs;
 typedef vector< bool > vb;
 typedef vector< vector< bool > > vvb;
 
+void cout_P(int P)
+{
+	cout << P % 5 + 1 << " " << P / 5 + 1 << endl;
+}
+
 int main()
 {
 	int x, y;
