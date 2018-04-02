@@ -48,6 +48,6 @@ int main()
 
 	cout << running_max << endl;
 
-	cin >> n; // just to stop the window closing immediately
+	cin >> n; // just to stop the window closing immediately.
 	return 0;
 }
