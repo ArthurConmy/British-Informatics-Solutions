@@ -41,6 +41,7 @@ int main()
 	if (P % 5 >= 2 && P / 5 >= 2) cout_P(P - 12);
 
 	// PROBLEM A DONE
-
+	
+	cin >> x; // stop the VSC++ window closing immediately
 	return 0;
 }
