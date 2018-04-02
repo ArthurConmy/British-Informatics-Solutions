@@ -31,7 +31,7 @@ int main()
 	cin >> score;
 
 	a.push_back(score);
-	a_min.push_back(min(score, 0));
+	a_min.push_back(0); //.push_back(min(score, 0));
 
 	int running_max = a.back() - a_min.back();
 
@@ -40,14 +40,14 @@ int main()
 		int score;
 		cin >> score;
 
+		a_min.push_back(min(a_min.back(), a.back())); // moved to before a.push_back so that runs are at least length 1.
 		a.push_back(a.back() + score);
-		a_min.push_back( min(a_min.back(), a.back()));
 
 		running_max = max(running_max, a.back()-a_min.back());
 	}
 
 	cout << running_max << endl;
 
-	cin >> n; // just to stop the window closing immediately.
+	cin >> n; // just to stop the window closing immediatly
 	return 0;
 }
