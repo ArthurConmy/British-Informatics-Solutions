@@ -23,7 +23,6 @@ int main()
 	#endif
 
 	
-}
-cpp```
+} // `
 
 though this has been different in the past
