@@ -1,8 +1,8 @@
 const int MAXN=100000;
 const ll p = 7LL + ll(1e9); // both of these may need to be edited, problem dependent
  
-ll fac[MAXN];
-ll inv_fac[MAXN];
+ll fac[MAXN+1];
+ll inv_fac[MAXN+1];
  
 ll mod_exp(ll a, ll b)
 {
